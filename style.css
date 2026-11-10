@@ -1,0 +1,96 @@
+:root {
+  /* Brand palette: adjust these values after confirming the final logo colors. */
+  --page: #faf7f2;
+  --paper: #fffefa;
+  --ink: #363c36;
+  --muted: #737a70;
+  --sage: #63766d;
+  --sage-dark: #4f6158;
+  --rose: #bd8f83;
+  --border: #e8e4dc;
+  --shadow: 0 12px 45px rgba(47, 54, 45, .07);
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;background:var(--page);color:var(--ink);font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Arial,sans-serif;-webkit-font-smoothing:antialiased}
+a{color:inherit}
+button{font:inherit}
+.site-header{max-width:1170px;margin:auto;display:flex;align-items:center;justify-content:space-between;gap:16px;padding:26px 30px 19px;border-bottom:1px solid var(--border)}
+.brand{display:inline-flex;align-items:center;gap:10px;text-decoration:none;color:var(--sage-dark);font-family:Georgia,"Times New Roman",serif;font-size:22px;letter-spacing:-.5px;font-weight:600}
+.brand i{font-style:italic;color:var(--rose)}
+.brand-icon{font-size:29px;color:var(--rose);line-height:1}
+.header-link{font-size:12px;letter-spacing:.08em;text-transform:uppercase;text-decoration:none;color:var(--sage-dark);font-weight:700}
+.header-link:hover,.byline a:hover{text-decoration:underline}
+.page{max-width:950px;margin:auto;padding:54px 24px 24px}
+.intro{text-align:center;margin:0 auto 39px}
+.eyebrow{font-size:11px;font-weight:800;letter-spacing:.22em;color:var(--sage);margin:0 0 13px}
+h1{font-family:Georgia,"Times New Roman",serif;font-size:clamp(34px,6vw,55px);font-weight:500;line-height:1.12;letter-spacing:-1.5px;margin:0 0 15px}
+.byline{font-size:14px;color:var(--muted);margin:0}
+.byline a{text-decoration:none;color:var(--sage-dark);font-weight:600}
+.chart-section{background:var(--paper);border:1px solid var(--border);border-radius:17px;padding:20px;box-shadow:var(--shadow)}
+.chart-toolbar{display:flex;align-items:center;justify-content:space-between;gap:12px;margin-bottom:16px}
+.chart-toolbar-copy h2{font-family:Georgia,"Times New Roman",serif;font-size:20px;font-weight:500;margin:0 0 5px}
+.chart-toolbar-copy p{color:var(--muted);font-size:12px;margin:0;line-height:1.5}
+.zoom-controls{display:flex;align-items:center;gap:7px;white-space:nowrap}
+.icon-button,.reset-button{background:#fff;border:1px solid #dcded6;color:var(--sage-dark);border-radius:9px;height:37px;cursor:pointer;touch-action:manipulation}
+.icon-button{min-width:37px;font-size:22px;line-height:1}
+.reset-button{padding:0 13px;font-size:12px;font-weight:700}
+.icon-button:hover,.reset-button:hover{border-color:var(--sage);background:#f4f7f3}
+.icon-button:disabled{opacity:.32;cursor:default}
+#zoom-level{font-size:12px;color:var(--sage-dark);width:44px;text-align:center;font-variant-numeric:tabular-nums;font-weight:700}
+.chart-viewport{background:#f2f0eb;border:1px solid var(--border);border-radius:9px;overflow:auto;width:100%;height:min(74vh,760px);overscroll-behavior:contain;touch-action:pan-x pan-y;-webkit-overflow-scrolling:touch;text-align:center;scrollbar-color:#b5bcb2 transparent}
+#pattern-image{display:block;width:100%;height:auto;max-width:none;min-width:0;margin:0 auto;user-select:none;-webkit-user-drag:none;-webkit-touch-callout:none;pointer-events:auto}
+.reader-note{display:flex;justify-content:space-between;gap:16px;color:var(--muted);font-size:11px;line-height:1.6;margin:13px 2px 0}
+.links-section{display:flex;justify-content:center;gap:13px;margin:30px auto 49px;flex-wrap:wrap}
+.primary-link,.coffee-link{display:inline-flex;align-items:center;justify-content:space-between;gap:16px;min-height:53px;padding:0 20px;border-radius:9px;text-decoration:none;font-size:14px;font-weight:700;transition:transform .15s,background .15s}
+.primary-link{background:var(--sage);color:white;min-width:260px}
+.primary-link:hover{background:var(--sage-dark);transform:translateY(-1px)}
+.coffee-link{background:#fff;border:1px solid var(--border);color:var(--ink);min-width:225px}
+.coffee-link:hover{border-color:var(--rose);transform:translateY(-1px)}
+.link-icon{font-size:15px}
+.footer{display:flex;justify-content:space-between;flex-wrap:wrap;gap:9px;padding:19px 0 7px;border-top:1px solid var(--border);color:#858780;font-size:11px}
+@media(max-width:620px){
+ .site-header{padding:17px 17px 15px}.brand{font-size:18px}.brand-icon{font-size:24px}.page{padding:34px 12px 18px}.intro{margin-bottom:27px}
+ .chart-section{padding:12px;border-radius:12px}.chart-toolbar{flex-wrap:wrap;gap:12px}.chart-toolbar-copy{width:100%}.chart-toolbar-copy h2{font-size:18px}
+ .chart-viewport{height:67svh}.reader-note{display:block}.print-note{display:block;margin-top:4px}.links-section{margin:24px auto 35px;flex-direction:column}.primary-link,.coffee-link{width:100%}.footer{display:block;line-height:1.8}
+}
+@media(prefers-reduced-motion:reduce){*{scroll-behavior:auto!important;transition:none!important}}
+
+:root{
+ --page:#fffdfa;--paper:#ffffff;--ink:#252536;--muted:#777582;
+ --sage:#5969ed;--sage-dark:#4452c5;--rose:#ff6473;--border:#eae4db;
+ --shadow:0 14px 44px rgba(36,28,15,.055)
+}
+body{background:var(--page)}
+.site-header{max-width:none;background:#ffdf24;border-bottom:none;padding:14px max(22px,calc((100vw - 1000px)/2))}
+.brand{font:800 16px/1.2 -apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;letter-spacing:.01em;color:#5b67ed}
+.header-link{color:#515ad8}
+.page{max-width:1010px;padding-top:24px}
+.brand-hero{background:#ffdf24;border-radius:20px;overflow:hidden;max-width:620px;margin:0 auto 28px;line-height:0}
+.brand-hero img{width:100%;height:auto;display:block}
+.intro{margin-bottom:30px}
+.eyebrow{color:#ea5b71;letter-spacing:.19em}
+h1{color:#262438;font-family:Georgia,"Times New Roman",serif}
+.byline a{color:#515ddb}
+.chart-section{border-radius:18px}
+.chart-toolbar-copy h2{font-size:20px}
+.icon-button,.reset-button{border-color:#d9d8ec;color:#4e59db}
+.icon-button:hover,.reset-button:hover{border-color:#5a64e0;background:#f1f2ff}
+#zoom-level{color:#4e59db}
+.chart-viewport{height:auto;max-height:none;overflow:hidden;background:#fff;touch-action:pan-y;overscroll-behavior:auto}
+.chart-viewport.zoomed{height:min(76vh,800px);max-height:min(76vh,800px);overflow:auto;touch-action:pan-x pan-y;overscroll-behavior:contain}
+#pattern-image{margin:0;}
+.primary-link{background:#5d68ed}
+.primary-link:hover{background:#4453c6}
+.coffee-link{border-color:#ffc0a8;background:#fff3ec}
+.coffee-link:hover{border-color:#f67f88}
+@media(max-width:620px){
+ .site-header{padding:14px 18px}.page{padding:14px 10px 18px}.brand-hero{border-radius:12px;margin-bottom:25px}
+ .chart-section{padding:10px}.chart-viewport{height:auto;max-height:none}.chart-viewport.zoomed{height:70svh;max-height:70svh}
+ .zoom-controls{gap:5px}.icon-button{min-width:41px;height:41px}.reset-button{height:41px}
+}
+
+/* Instagram button added in preview v2 */
+.instagram-link{display:inline-flex;align-items:center;justify-content:space-between;gap:16px;min-height:53px;padding:0 20px;border-radius:9px;text-decoration:none;font-size:14px;font-weight:700;transition:transform .15s,background .15s;background:#fff;border:1px solid #ddd9f9;color:#4e59db;min-width:225px}
+.instagram-link:hover{background:#f5f3ff;border-color:#8587f0;transform:translateY(-1px)}
+@media(max-width:620px){.instagram-link{width:100%}}
